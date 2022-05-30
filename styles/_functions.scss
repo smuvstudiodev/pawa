@@ -1,0 +1,85 @@
+$spaceamounts: (0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 75, 100, 150);
+$sides: (top, bottom, left, right);
+$alignment: (left, right, center);
+$colors: (
+  primary,
+  secondary,
+  light,
+  gray,
+);
+
+@each $space in $spaceamounts {
+  @each $side in $sides {
+    .m#{str-slice($side, 0, 1)}-#{$space} {
+      margin-#{$side}: #{$space}px !important;
+    }
+
+    .m-#{$space} {
+      margin: #{$space}px !important;
+    }
+
+    .my-#{$space} {
+      margin-bottom: #{$space}px !important;
+      margin-top: #{$space}px !important;
+    }
+
+    .mx-#{$space} {
+      margin-right: #{$space}px !important;
+      margin-left: #{$space}px !important;
+    }
+
+    .py-#{$space} {
+      padding-bottom: #{$space}px !important;
+      padding-top: #{$space}px !important;
+    }
+
+    .px-#{$space} {
+      padding-right: #{$space}px !important;
+      padding-left: #{$space}px !important;
+    }
+
+    .p#{str-slice($side, 0, 1)}-#{$space} {
+      padding-#{$side}: #{$space}px !important;
+    }
+
+    .p-#{$space} {
+      padding: #{$space}px !important;
+    }
+
+    .border-radius-#{$space} {
+      border-radius: #{$space}px !important;
+    }
+
+  }
+}
+
+@each $color in $colors {
+  .#{$color} {
+    background-color: var(--#{$color}) !important;
+  }
+  .text-#{$color} {
+    color: var(--#{$color}) !important;
+  }
+}
+
+@each $align in $alignment {
+  .text-#{$align} {
+    text-align: #{$align} !important;
+  }
+}
+
+@for $i from 1 through 6 {
+  h#{7 - $i} {
+    margin: 0;
+    font-family: 'Inter', serif;
+    font-size: $i * 1rem;
+    letter-spacing: 1.36px;
+  }
+}
+
+@for $i from 0 through 9 {
+  .opacity-#{$i} {
+    opacity: $i * 0.1;
+  }
+}
+

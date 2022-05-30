@@ -1,0 +1,85 @@
+@import './variables';
+@import './functions';
+@import './typography';
+@import './breakpoints';
+
+html {
+  font-size: 1rem;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: var(--light);
+  color: var(--primary);
+  font-weight: 400;
+  overflow-x: hidden;
+}
+
+p {
+  line-height: 1.6rem;
+}
+
+.container {
+  max-width: var(--container-size-sm);
+  margin: 0 auto;
+  padding: 0rem;
+  position: relative;
+
+  @include  md{
+
+  padding: 0 3rem;
+    max-width: var(--container-size-md);
+  }
+
+  @include  lg{
+    max-width: var(--container-size-lg);
+  }
+
+  @include  xl{
+    max-width: var(--container-size-xl);
+  }
+}
+
+.flex {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+  &.justify-content-between {
+    justify-content: space-between;
+  }
+
+  &.justify-content-center {
+    justify-content: center;
+  }
+
+  &.justify-content-end {
+    justify-content: flex-end;
+  }
+}
+
+.divider-long {
+  height: 10px;
+  width: 96px;
+  background: var(--secondary);
+  border-radius: 50px;
+}
+
+.divider-short {
+  height: 10px;
+  width: 46px;
+  background: rgba(var(--secondary-rgb), 0.23);
+  border-radius: 50px;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.badge {
+  background: rgba(var(--secondary-rgb), 0.5);
+  border-radius: 5px;
+  padding: 5px 12px;
+  margin: 0 5px;
+}

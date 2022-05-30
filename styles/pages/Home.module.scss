@@ -1,0 +1,397 @@
+@import '../mixins';
+@import '../breakpoints';
+
+.main {
+  padding: 0 1rem; 
+
+  @include lg {
+    padding: 0 2rem; 
+  }
+
+  @include xl {
+    padding: 0 6.25rem; 
+  }
+
+}
+
+.bankFeature {
+  margin-top: 130px;
+  background: linear-gradient(-263.32deg, #CCDF5D 1.64%, #F8FED2 99.26%);
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  align-items: center;
+
+  @include md {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  h4 {
+    font-size: 2.2rem;
+    @include xl {
+      font-size: 3.5rem;
+    }
+  }
+
+  .bankDesc {
+    padding: 40px;
+
+    @include xl {
+      padding: 90px;
+    }
+  }
+}
+
+.paybillFeature {
+  margin-top: 130px;
+  background: var(--primary);
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  align-items: center;
+
+  @include lg {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include xl {
+    grid-template-columns: 1fr 1.3fr;
+  }
+
+  .paybillImage {
+    position: relative;
+    height: 180px;
+
+    @include md {
+      height: 400px;
+    }
+
+    @include lg {
+      height: 100%;
+    }
+
+    svg[data-testid="paybills"] {
+      position: absolute;
+      height: 395px;
+      top: 65%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      @include md {
+        top: 60%;
+        height: 550px;
+      }
+
+      @include md {
+        top: 60%;
+        height: 668px;
+      }
+
+      @include lg {
+        top: 50%;
+        left: 40%;
+      }
+
+      @include xl {
+        height: 765px;
+        left: 50%;
+      }
+    }
+  }
+
+  h4 {
+    color: var(--secondary);
+    font-size: 2.2rem;
+    @include xl {
+      font-size: 3rem;
+    }
+  }
+
+  .paybillDesc {
+    padding: 40px;
+
+    @include lg {
+      padding: 60px;
+    }
+
+    @include xl {
+      padding: 90px;
+    }
+
+    h4, p {
+      text-align: start;
+
+      @include md {
+        text-align: center;
+      }
+
+      @include lg {
+        text-align: start;
+      }
+    }
+  }
+}
+
+
+.info {
+  margin-top: 160px;
+
+  h4 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    text-align: center;
+    padding: 0 3rem;
+
+    @include md {
+      font-size: 2.3rem;
+      line-height: 2.8rem;
+    }
+
+    @include xl {
+      text-align: left;
+      font-size: 3.2rem;
+      line-height: 4.0rem;
+    }
+  }
+
+  .infoDesc {
+    margin: 0 auto;
+    max-width: 500px;
+  }
+}
+
+.frames {
+  margin-top: 190px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 1rem;
+  margin-top: 100px;
+
+  @include md {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include lg {
+    margin-top: 190px;
+  }
+
+  .frame {
+    border-radius: 20px;
+    background: var(--light-dark);
+    height: 200px;
+    position: relative;
+    margin-top: 100px;
+
+    @include lg{
+      margin-top: 0;
+      height: 300px
+    }
+
+    @include xl {
+      height: 400px;
+    }
+    
+    svg[data-testid="priceFrame"], svg[data-testid="completeFrame"] {
+      height: 280px;
+
+      @include md{
+        height: 300px
+      }
+      @include lg{
+        height: 400px
+      }
+      @include xl {
+        height: 529px;
+      }
+    }
+  }
+}
+
+.insurance {
+    margin-top: 120px;
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: auto;
+    gap: 1rem;
+
+    @include lg {
+      grid-template-columns: 1fr 2fr;
+    }
+    
+
+    .box {
+      border-radius: 20px;
+      height: 100%;
+      display: block;
+      align-items: center;
+      flex-grow: 1;
+
+      .list {
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: auto;
+        align-items: center;
+
+        @include md {
+          grid-template-columns: repeat(3, 1fr) ;
+        }
+
+        @include lg {
+          grid-template-columns: 1fr ;
+        }
+
+        ul {
+          color: var(--light);
+          padding: 1rem;
+          font-size: 0.825rem;
+          line-height: 1.5rem;
+          list-style-image: url(../../public/ellipse.svg);
+        }
+
+        .badgeSecondary {
+          display: flex;
+          justify-content: flex-start;
+          small {
+            border-radius: 30px;
+            padding: 10px 20px;
+            background: var(--secondary);
+            margin: 0;
+            font-weight: 600;
+          }
+        }
+
+        h4 {
+          font-size: 2rem;
+          line-height: 2.5rem;
+          text-align: left;
+      
+          @include md {
+            font-size: 2.2rem;
+            line-height: 2.5rem;
+          }
+      
+          @include lg {
+            font-size: 3rem;
+            line-height: 4.0rem;
+          }
+        }
+  
+      }
+
+      
+      .virtualCard {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        align-items: center;
+        min-height: 300px;
+
+        @include md {
+          min-height: 300px;
+          grid-template-columns: 1fr 1fr;
+        }
+
+        @include xl {
+          min-height: 380px;
+        }
+
+        h4 {
+          font-size: 2rem;
+          line-height: 2.5rem;
+          text-align: center;
+      
+          @include md {
+            text-align: left;
+            font-size: 2.2rem;
+            line-height: 2.5rem;
+          }
+      
+          @include lg {
+            font-size: 3rem;
+            line-height: 4.0rem;
+          }
+        }
+
+        .badgeLight {
+          display: flex;
+          justify-content: center;
+
+          @include md {
+            justify-content: flex-start;
+          }
+          small {
+            border-radius: 30px;
+            padding: 10px 20px;
+            background: rgba(#FAFDEC, 0.4);
+            margin: 0 auto;
+            font-weight: 600;
+            
+            @include md {
+              margin: 0;
+            }
+          }
+        }
+
+        .cardFrame {
+          height: auto;
+          display: flex;
+          justify-content: center;
+
+          svg[data-testid="cardFrame"] {
+            position: relative;
+            height: 180px;
+
+            @include sm {
+              height: 300px;
+            }
+  
+            @include lg {
+              position: absolute;
+              height: 400px;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              height: 300px;
+              left: 75%;
+            }
+  
+            @include xl {
+              height: 380px;
+            }
+          }
+        }
+      }
+
+      
+    }
+}
+
+.footer {
+  margin-top: 100px;
+
+  @include md {
+    margin-top: 150px;
+  }
+
+  .copyright {
+    font-size: 12px;
+    color: var(--gray);
+    text-align: center;
+    padding: 100px;
+    margin: 0 auto;
+  }
+
+  .appButton {
+    height: 40px;
+
+    @include md {
+      height: 50px;
+    }
+
+    @include lg {
+      height: 60px
+    }
+  }
+}

@@ -1,0 +1,113 @@
+@import '../../styles/mixins';
+@import '../../styles/breakpoints';
+
+.bankFeature {
+  margin-top: 130px;
+  background: linear-gradient(-263.32deg, #CCDF5D 1.64%, #F8FED2 99.26%);
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  align-items: center;
+
+  @include lg {
+    grid-template-columns: 1fr 1.2fr;
+  }
+
+  @include xl{
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .bankFrame {
+    padding: 30px;
+    position: relative;
+    height: 360px;
+    order: 1;
+
+    @include lg {
+      order: 0;
+      height: 100%;
+    }
+
+    svg[data-testid="bankframe"] {
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      width: 90%;
+      transform: translate(-50%, -50%);
+
+      @include md {
+        width: 100%
+      }
+    }
+  }
+
+  
+
+  h4 {
+    font-size: 2.2rem;
+    @include xl {
+      font-size: 3rem;
+    }
+  }
+
+  .bankDesc {
+    padding:60px 40px;
+    @include lg {
+      padding: 40px;
+    }
+
+    h4 {
+      font-size: 1.8rem;
+
+      @include md {
+        font-size: 2.8rem;
+      }
+
+      @include lg {
+        font-size: 3rem;
+      }
+      @include xl {
+        font-size: 3.45rem;
+      }
+    }
+
+    h4, p {
+      text-align: start;
+
+      @include md {
+        text-align: center;
+      }
+
+      @include lg {
+        text-align: start;
+      }
+    }
+
+    @include lg {
+      padding: 90px 30px;
+    }
+
+    @include xl {
+      padding: 90px;
+    }
+
+    .fees {
+      display: none;
+      gap: 1;
+      grid-template-columns: repeat(1, auto);
+      grid-template-rows: auto;
+      justify-content: center;
+
+      @include md {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+      }
+
+      @include lg {
+        justify-content: start;
+      }
+    }
+  }
+}
+  
