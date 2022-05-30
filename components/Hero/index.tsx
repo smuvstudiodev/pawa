@@ -1,6 +1,6 @@
 import React from 'react';
 import Icon from '../Icon';
-import styles from './hero.module.scss';
+import styles from './Hero.module.scss';
 
 const Hero = () => {
   return (
