@@ -42,7 +42,7 @@ const Seamless = () => {
           <div className={styles.icon}>
             <Icon icon="send" />
           </div>
-          <p className="py-10">Send & receive money</p>
+          <p className="py-10">Withdraw</p>
         </div>
         <div className={styles.serviceCard}>
           <div className={styles.icon}>
