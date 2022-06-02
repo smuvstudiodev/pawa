@@ -16,7 +16,7 @@ const Home: NextPage = () => {
       </Head>
 
       <Hero />
-      <main className={[styles.main, 'container'].join(' ')}>
+      {/* <main className={[styles.main, 'container'].join(' ')}>
         <Seamless />
 
         <BankFeature />
@@ -36,7 +36,7 @@ const Home: NextPage = () => {
           </div>
         </div>
 
-        {/* <div className={styles.info}>
+        <div className={styles.info}>
           <h4 className="text-center">Send and receive money instantly</h4>
           <div
             className={[
@@ -49,9 +49,9 @@ const Home: NextPage = () => {
             Transfer money to anyone in Nigeria instantly with their phone
             number or bank account number.
           </div>
-        </div> */}
+        </div>
 
-        {/* <div className={styles.frames}>
+        <div className={styles.frames}>
           <div className={styles.frame}>
             <div style={{ position: 'absolute', bottom: 0 }}>
               <Icon icon="priceFrame" />
@@ -62,7 +62,7 @@ const Home: NextPage = () => {
               <Icon icon="completeFrame" />
             </div>
           </div>
-        </div> */}
+        </div>
 
         <div className={styles.insurance}>
           <div className={[styles.box, 'primary'].join(' ')}>
@@ -119,7 +119,7 @@ const Home: NextPage = () => {
             &copy; {new Date().getFullYear()} Pawa Digital LTD. All rights reserved.
           </div>
         </div>
-      </main>
+      </main> */}
     </>
   );
 };
