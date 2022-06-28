@@ -5,17 +5,14 @@ import styles from './Hero.module.scss';
 const Hero = () => {
   return (
     <div className={styles.hero}>
+     
       <div className="container">
-        <div className={styles.logo}>
-          <Icon icon="logo" />
-        </div>
-        <div className={styles.heroColumn}>
+        <div>
           <div className={styles.heroDesc}>
-            <h3>One app for all your payment needs.</h3>
-            <h5 className="text-light py-40">
-              The most seamless way to pay your electricity bills, cable
-              subscription, buy airtime, buy data, pay for insurance and
-              transfer money.
+            <h3>#PaymentMadeEasy</h3>
+            <h5 className="py-40">
+              Seamlessly pay bills, buy airtime & data, renew subscriptions, buy
+              insurance and transfer money.
             </h5>
             <div className={styles.btnWrap}>
               <div className={styles.appButton}>
@@ -26,10 +23,8 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          <div className={styles.pawa}>
-            <Icon icon="phone" />
+          <div className={styles.phone}>
             <Icon icon="phoneStraight" />
-            <Icon icon="pawa" />
           </div>
         </div>
       </div>

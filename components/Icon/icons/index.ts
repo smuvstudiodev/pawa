@@ -15,3 +15,4 @@ export * from './PaybillsFrame';
 export * from './CardFrame';
 export * from './PhoneStraight';
 export * from './Logo';
+export * from './LogoLight';

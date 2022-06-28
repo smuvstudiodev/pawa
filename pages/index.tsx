@@ -1,10 +1,8 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import BankFeature from '../components/BankFeature';
+import Footer from '../components/Footer';
 import Hero from '../components/Hero';
 import Icon from '../components/Icon';
-import Seamless from '../components/Seamless';
-import styles from '../styles/pages/Home.module.scss';
 
 const Home: NextPage = () => {
   return (
@@ -15,111 +13,16 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <header className="container">
+        <div className="header mt-10 mb-10">
+          <div className="flex justify-content-between">
+            <Icon icon="logoLight" />
+            <div>navbar here</div>
+          </div>
+        </div>
+      </header>
       <Hero />
-      {/* <main className={[styles.main, 'container'].join(' ')}>
-        <Seamless />
-
-        <BankFeature />
-
-        <div className={styles.paybillFeature}>
-          <div className={styles.paybillDesc}>
-            <h4>Pay Other Bills</h4>
-            <p className="text-light">
-              Instantly pay for your electricity bills by transferring money
-              from your mobile/internet banking app or USSD to your{' '}
-              <b>Dedicated</b> account number and receive a token{' '}
-              <b>Insantly</b> via email, SMS and in-app.
-            </p>
-          </div>
-          <div className={styles.paybillImage}>
-            <Icon icon="paybillsFrame" />
-          </div>
-        </div>
-
-        <div className={styles.info}>
-          <h4 className="text-center">Send and receive money instantly</h4>
-          <div
-            className={[
-              styles.infoDesc,
-              'text-center',
-              'text-gray',
-              'mt-20',
-            ].join(' ')}
-          >
-            Transfer money to anyone in Nigeria instantly with their phone
-            number or bank account number.
-          </div>
-        </div>
-
-        <div className={styles.frames}>
-          <div className={styles.frame}>
-            <div style={{ position: 'absolute', bottom: 0 }}>
-              <Icon icon="priceFrame" />
-            </div>
-          </div>
-          <div className={styles.frame}>
-            <div style={{ position: 'absolute', bottom: 0 }}>
-              <Icon icon="completeFrame" />
-            </div>
-          </div>
-        </div>
-
-        <div className={styles.insurance}>
-          <div className={[styles.box, 'primary'].join(' ')}>
-            <div className={[styles.list, "p-30"].join(' ')}>
-              <h4 className="text-secondary">Insurance</h4>
-              <ul>
-                <li>
-                  Third Party Motor
-                </li>
-                <li>
-                  Health Insuarance (HMO)
-                </li>
-                <li>
-                  Home Cover
-                </li>
-                <li>
-                  Personal Accident
-                </li>
-              </ul>
-              <span className={styles.badgeSecondary}>
-                <small>Coming soon!</small>
-              </span>
-            </div>
-          </div>
-          <div className={[styles.box, 'secondary'].join(' ')}>
-            <div className={styles.virtualCard}>
-              <div className=" p-30">
-                <div>
-                  <h4 className="text-primary mb-15">Virtual Cards</h4>
-                  <div className={styles.badgeLight}>
-                    <small>Coming soon!</small>
-                  </div>
-                </div>
-              </div>
-              <div className={styles.cardFrame}>
-                <Icon icon="cardFrame" />
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className={styles.footer}>
-          <h5 className="text-center mb-20">Ready to get started with pawa?</h5>
-          <div className="flex justify-content-center">
-            <div className={styles.appButton}>
-              <Icon icon="appStore" />
-            </div>
-            <div className={styles.appButton}>
-              <Icon icon="playStore" />
-            </div>
-          </div>
-
-          <div className={styles.copyright}>
-            &copy; {new Date().getFullYear()} Pawa Digital LTD. All rights reserved.
-          </div>
-        </div>
-      </main> */}
+      <Footer />
     </>
   );
 };
