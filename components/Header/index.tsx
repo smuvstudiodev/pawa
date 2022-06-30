@@ -58,7 +58,7 @@ const Header = () => {
                       <Icon icon="logoLight" />
                     </a>
                   </Link>
-                  <div>
+                  <div className="mobileNavLinks">
                     <Link href="/privacy-policy">
                       <a>
                         <div className="headerText">Privacy Policy</div>
