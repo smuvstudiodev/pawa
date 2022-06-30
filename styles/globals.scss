@@ -4,6 +4,8 @@
 @import './breakpoints';
 
 html {
+  padding: 0;
+  margin: 0;
   font-size: 1rem;
 }
 
@@ -20,12 +22,12 @@ body {
 .backGround {
   background: url('../public/BgMobile.png');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 
   @include md {
     background: url('../public/backgoundImage.png');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
   }
 }
 
@@ -147,7 +149,6 @@ aside {
 
   @include lg {
     max-width: var(--container-size-lg);
-    padding: 0;
   }
 
   @include xl {
@@ -176,12 +177,12 @@ aside {
 .footer {
   position: relative;
   width: 100%;
-  padding: 30px 30px;
+  // padding: 30px 30px;
   box-sizing: border-box;
 
   @include xl {
     position: absolute;
-    padding: 0px 30px;
+    // padding: 0px 30px;
     bottom: 30px;
   }
 
@@ -197,26 +198,15 @@ aside {
   }
 }
 
-.header {
-  position: relative;
-  box-sizing: border-box;
-
-  @include lg {
-    position: absolute;
-    top: 0;
-  }
-
-  @include lg {
-    width: 100%;
-    max-width: var(--container-size-lg);
-  }
-
-  @include xl {
-    width: 100%;
-    max-width: var(--container-size-xl);
-  }
-}
-
 a {
   text-decoration: none;
+}
+
+.header, .footer {
+  position: absolute;
+  width: 100%;
+}
+
+.footer {
+  bottom: 0;
 }

@@ -2,9 +2,9 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer>
-      <div className="footer">
-        <div className="column">
+    <footer className="footer">
+      <div className="container">
+        <div className="column mt-20 mb-20">
           <div>
             <small>support@pawa.ng</small>
           </div>
