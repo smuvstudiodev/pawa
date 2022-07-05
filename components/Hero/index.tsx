@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 import Icon from '../Icon';
 import styles from './Hero.module.scss';
@@ -27,7 +28,13 @@ const Hero = () => {
             </div>
           </div>
           <div className={styles.phone}>
-            <Icon icon="phoneStraight" />
+            <Image
+              src="/phone.png"
+              alt="Pawa app"
+              width={784}
+              height={519}
+              layout="responsive"
+            />
           </div>
         </div>
       </div>
