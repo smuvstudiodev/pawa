@@ -177,14 +177,32 @@ aside {
 .footer {
   position: relative;
   width: 100%;
-  // padding: 30px 30px;
+  padding: 10px 0;
   box-sizing: border-box;
 
   @include xl {
     position: absolute;
-    // padding: 0px 30px;
     bottom: 30px;
   }
+
+  .column {
+    display: block;
+    text-align: center;
+    width: 100%;
+
+    @include md {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+
+.footer-relative {
+  position: relative;
+  width: 100%;
+  padding: 10px 0;
+  box-sizing: border-box;
 
   .column {
     display: block;
@@ -203,8 +221,12 @@ a {
 }
 
 .header, .footer {
-  position: absolute;
   width: 100%;
+}
+
+.header {
+  position: absolute;
+  z-index: 999;
 }
 
 .footer {

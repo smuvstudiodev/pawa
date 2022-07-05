@@ -4,7 +4,7 @@ import styles from "./privacyPolicy.module.scss";
 
 const PrivacyPolicy = () => {
   return (
-    <Layout title="Privacy Policy">
+    <Layout title="Privacy Policy" footerFixed={false}>
       <div className="container">
         <div className={['pt-100 pb-80', styles.text].join(' ')}>
           <h3 className="text-center mb-20">Privacy Policy</h3>

@@ -6,9 +6,10 @@ import Header from '../Header';
 interface ILayout {
   title: string;
   children: JSX.Element | JSX.Element[];
+  footerFixed?: boolean
 }
 
-const Layout = ({ title, children }: ILayout) => {
+const Layout = ({ title, children, footerFixed = true }: ILayout) => {
   return (
     <>
       <Head>
@@ -19,7 +20,7 @@ const Layout = ({ title, children }: ILayout) => {
       <div className="backGround">
         <Header />
         {children}
-        <Footer />
+        <Footer footerFixed={footerFixed} />
       </div>
     </>
   );

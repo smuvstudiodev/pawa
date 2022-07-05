@@ -4,30 +4,47 @@
   height: auto;
   overflow: hidden;
 
+  .descWrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 93vh;
+    justify-content: space-between;
+
+    @include lg {
+      min-height: 100vh;
+    }
+  }
+
   @include xl {
     height: 100vh;
   }
 
   .phone {
-    max-width: 350px;
+    max-width: 725px;
     margin: 0 auto;
     margin-top: 90px;
+    width: 350px;
 
     @include md {
-      max-width: 600px;
       margin: 0 auto;
-      margin-top: 120px;
+      margin-top: 90px;
+      width: 600px;
     }
 
     @include lg {
+       margin: 0 auto;
       margin-top: 90px;
-      max-width: 725px;
+      width: 725px;
     }
   }
 
   .heroDesc {
     margin: 100px 0 0 0;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 auto;
 
     .btnWrap {
       display: flex;

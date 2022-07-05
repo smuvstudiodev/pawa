@@ -5,7 +5,7 @@ import styles from '../privacy-policy/privacyPolicy.module.scss';
 
 const TermsOfService = () => {
   return (
-    <Layout title="Terms & conditions">
+    <Layout title="Terms & conditions" footerFixed={false}>
       <div className="container">
         <div className={['pt-100 pb-80', styles.text].join(' ')}>
           <h3 className="text-center mb-20">Terms Of Service</h3>

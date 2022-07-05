@@ -1,8 +1,12 @@
 import React from "react";
 
-const Footer = () => {
+interface IFooter {
+  footerFixed: boolean;
+}
+
+const Footer = ({footerFixed}: IFooter) => {
   return (
-    <footer className="footer">
+    <footer className={footerFixed ? "footer" : "footer-relative"}>
       <div className="container">
         <div className="column mt-20 mb-20">
           <div>
