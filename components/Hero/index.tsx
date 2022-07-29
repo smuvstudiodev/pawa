@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 import Icon from '../Icon';
 import styles from './Hero.module.scss';
@@ -6,30 +7,34 @@ const Hero = () => {
   return (
     <div className={styles.hero}>
       <div className="container">
-        <div className={styles.logo}>
-          <Icon icon="logo" />
-        </div>
-        <div className={styles.heroColumn}>
+        <div className={styles.descWrapper}>
           <div className={styles.heroDesc}>
-            <h3>One app for all your payment needs.</h3>
-            <h5 className="text-light py-40">
-              The most seamless way to pay your electricity bills, cable
-              subscription, buy airtime, buy data, pay for insurance and
-              transfer money.
-            </h5>
-            <div className={styles.btnWrap}>
-              <div className={styles.appButton}>
-                <Icon icon="appStore" />
-              </div>
-              <div className={styles.appButton}>
-                <Icon icon="playStore" />
+            <div>
+              <h3>
+                #Payment<span>MadeEasy</span>
+              </h3>
+              <h5 className="py-40">
+                Seamlessly pay bills, buy airtime & data, renew subscriptions,
+                buy insurance and transfer money.
+              </h5>
+              <div className={styles.btnWrap}>
+                <div className={styles.appButton}>
+                  <Icon icon="appStore" />
+                </div>
+                <div className={styles.appButton}>
+                  <Icon icon="playStore" />
+                </div>
               </div>
             </div>
           </div>
-          <div className={styles.pawa}>
-            <Icon icon="phone" />
-            <Icon icon="phoneStraight" />
-            <Icon icon="pawa" />
+          <div className={styles.phone}>
+            <Image
+              src="/phone.png"
+              alt="Pawa app"
+              width={784}
+              height={519}
+              layout="responsive"
+            />
           </div>
         </div>
       </div>
