@@ -42,10 +42,6 @@ const PrivacyPolicy = () => {
               <b> IP address:</b>Every device connected to the Internet is assigned a number known as an Internet protocol (IP) address. These numbers are usually assigned in geographic blocks. An IP address can often be used to identify the location from which a device is connecting to the Internet.
             </li>
 
-
-
-
-
             <li className="mb-10">
               <b> Personnel:</b>  refers to those individuals who are employed by PAWA or are under contract to perform a service on behalf of one party.
 
