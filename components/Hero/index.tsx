@@ -14,8 +14,7 @@ const Hero = () => {
                 #Payment<span>MadeEasy</span>
               </h3>
               <h5 className="py-40">
-                Seamlessly pay bills, buy airtime & data, renew subscriptions,
-                buy insurance and transfer money.
+                Spice up your life with discounted bill payments, affordable insurance packages, swift wallet transactions, a secure virtual dollar card, cash rewards, and more. 
               </h5>
               <div className={styles.btnWrap}>
                 <div className={styles.appButton}>
