@@ -15,7 +15,7 @@ const Hero = () => {
                 #Payment<span>MadeEasy</span>
               </h3>
               <h5 className="py-40">
-                Spice up your life with cashback on airtime & data, bills payment and dollar card transaction.
+              Spice up your life with daily cashback on airtime & data, bills payment, transfers, and dollar card transactions.
               </h5>
               <div className={styles.btnWrap}>
                 <div className={styles.appButton}>
